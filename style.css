@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+
+:root{
+
+
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+.card{
+width : 450px;
+background-color:white;
+color: var(--desaturated-blue);
+border-radius: 25px;
+overflow: hidden;
+margin: 50px auto;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    font-size: 16px;
+    font-family: "Red Hat Display",sans-serif;
+}
+.title{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+}
+.hp-image{
+    width:100%;
+}
+
+.container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.container > *{
+    margin: 13px 0;
+}
+
+.text-description{
+    line-height: 25px;
+}
+
+.plan-container{
+   background-color: var(--very-pale-blue);
+   border-radius: 15px;
+   padding: 25px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 16px;
+}
+
+.plan-container a{
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 13px;
+}
+.plan-container a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+.plan-container p{
+    line-height: 25px;
+}
+
+.plan-description{
+    line-height: 15px;
+}
+.proceed-button{
+    background-color: var(--bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
+.proceed-button:hover{
+    opacity: 0.8;
+}
+.cancel-button{
+    border: none;
+    background-color: white;
+    color: var(--desaturated-blue);
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.cancel-button:hover{
+    color: black;
+}
+.plan-container strong{
+    color: var(--dark-blue);
+}
